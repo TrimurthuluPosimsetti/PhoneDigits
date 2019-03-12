@@ -28,7 +28,7 @@ class Main {
   }
   public static void phoneDigit(char c[],String s,ArrayList<String> ar,int in,int strin,HashMap<Character,String> hm){
     //System.out.println(strin+" "+in);
-    for(int i=0;i<s.length();i++){
+    for(int i=0;i<hm.get(s.charAt(strin)).length();i++){
       c[in]=hm.get(s.charAt(strin)).charAt(i);
       if(in==s.length()-1){
         String v="";
